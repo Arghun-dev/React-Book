@@ -6,10 +6,12 @@ const mainPageData = [
       {
         id: 1,
         title: 'Images in HTML',
+        content: 'images-in-html',
       },
       {
         id: 2,
         title: 'Video and Audio content',
+        content: 'video-and-audio-content',
       },
     ],
   },

@@ -8,7 +8,7 @@ const Dashboard = () => {
     <Row gutter={[16, 16]}>
       {dashboard.dashboardCards.map((item) => (
         <Col xs={24} md={12} lg={8} key={item.id}>
-          <Link to={item.link}>
+          <Link to={item.link} className='root'>
             <Card className='card' title={item.title} hoverable>
               {item.content}
             </Card>

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import HTML from './pages/HTML';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './assets/style/base/custom-antd.css';
 
 function App() {
   return (
