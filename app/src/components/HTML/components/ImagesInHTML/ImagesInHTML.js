@@ -1,12 +1,11 @@
 import { Card, Row } from 'antd';
-import PropTypes from 'prop-types';
 import Note from '../../../Note';
 import Highlight from '../../../Highlight';
 import AlternativeText from './AlternativeText/AlternativeText';
 
-const ImagesInHTML = ({ content }) => {
+const ImagesInHTML = () => {
   return (
-    <Card title={content}>
+    <Card title='Images in HTML'>
       <Row>
         <Note>
           Search engines also read image filenames and count them towards SEO.
@@ -27,10 +26,6 @@ const ImagesInHTML = ({ content }) => {
       </Row>
     </Card>
   );
-};
-
-ImagesInHTML.propTypes = {
-  content: PropTypes.string.isRequired,
 };
 
 export default ImagesInHTML;

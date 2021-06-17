@@ -2,6 +2,7 @@ import Container from './components/Container';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import HTML from './pages/HTML';
+import ImagesInHTML from './pages/ImagesInHTML';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './assets/style/base/custom-antd.css';
 
@@ -14,8 +15,11 @@ function App() {
           <Route exact path='/'>
             <Dashboard />
           </Route>
-          <Route path='/html'>
+          <Route exact path='/html'>
             <HTML />
+          </Route>
+          <Route path='/html/images-in-html'>
+            <ImagesInHTML />
           </Route>
         </Switch>
       </Container>

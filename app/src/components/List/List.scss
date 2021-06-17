@@ -1,0 +1,13 @@
+.list-root {
+  margin: 24px 0px;
+  padding: 8px;
+  background-color: #eee;
+  color: #2a3255;
+
+  div {
+    .title {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
