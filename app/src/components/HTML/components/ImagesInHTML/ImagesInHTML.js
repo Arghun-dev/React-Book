@@ -5,7 +5,7 @@ import AlternativeText from './AlternativeText/AlternativeText';
 
 const ImagesInHTML = () => {
   return (
-    <Card title='Images in HTML'>
+    <Card title='Images in HTML' style={{ marginBottom: 40 }}>
       <Row>
         <Note>
           Search engines also read image filenames and count them towards SEO.

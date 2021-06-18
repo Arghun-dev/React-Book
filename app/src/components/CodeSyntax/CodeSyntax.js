@@ -1,14 +1,19 @@
 import PropTypes from 'prop-types';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { CodeBlock, dracula } from 'react-code-blocks';
 
 const CodeSyntax = ({ codeString }) => {
   if (!codeString) return null;
 
   return (
-    <SyntaxHighlighter language='javascript' style={dark}>
-      {codeString}
-    </SyntaxHighlighter>
+    <CodeBlock
+      text={codeString}
+      language='javascript'
+      showLineNumbers
+      startingLineNumber
+      theme={dracula}
+      wrapLines
+      codeBlock
+    />
   );
 };
 
