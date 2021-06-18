@@ -1,15 +1,17 @@
-import Container from './components/Container';
-import Header from './components/Header';
-import Dashboard from './components/Dashboard';
-import HTML from './pages/HTML';
-import ImagesInHTML from './pages/ImagesInHTML';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import Container from './components/Container';
+// import Header from './components/Header';
+// import Dashboard from './components/Dashboard';
+// import HTML from './pages/HTML';
+// import ImagesInHTML from './pages/ImagesInHTML';
+import Home from './pages/Home';
+import Layout from './components/Layout';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './assets/style/base/custom-antd.css';
 
 function App() {
   return (
     <Router>
-      <Container>
+      {/* <Container>
         <Header />
         <Switch>
           <Route exact path='/'>
@@ -22,7 +24,10 @@ function App() {
             <ImagesInHTML />
           </Route>
         </Switch>
-      </Container>
+      </Container> */}
+      <Layout>
+        <Home />
+      </Layout>
     </Router>
   );
 }

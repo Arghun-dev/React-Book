@@ -5,9 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd/dist/antd.css';
 
+// context providers
+import MenuProvider from './context/MenuContext';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MenuProvider>
+      <App />
+    </MenuProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

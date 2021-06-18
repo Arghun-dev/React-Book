@@ -1,6 +1,6 @@
 import { Row, Col, Card } from 'antd';
 import { Link } from 'react-router-dom';
-import dashboard from '../../data/dashboard';
+import dashboard from '../../data/side-menu';
 import './Dashboard.scss';
 
 const Dashboard = () => {
