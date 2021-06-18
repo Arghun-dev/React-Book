@@ -1,0 +1,14 @@
+.displaySubItemRoot {
+  background-color: #e7eff8;
+  color: #2f74c0;
+  font-size: 20px;
+  border-left: 4px solid #2f74c0;
+  padding-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 2px 4px 6px #ddd;
+  }
+}
