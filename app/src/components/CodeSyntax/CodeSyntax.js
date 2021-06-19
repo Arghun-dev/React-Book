@@ -1,24 +1,24 @@
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { CodeBlock, dracula } from 'react-code-blocks';
+import Prism from 'prismjs';
+import './prism.css';
 
-const CodeSyntax = ({ codeString }) => {
-  if (!codeString) return null;
+const CodeSyntax = ({ children }) => {
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
 
   return (
-    <CodeBlock
-      text={codeString}
-      language='javascript'
-      showLineNumbers
-      startingLineNumber
-      theme={dracula}
-      wrapLines
-      codeBlock
-    />
+    <div>
+      <pre>
+        <code className='language-javascript'>{children}</code>
+      </pre>
+    </div>
   );
 };
 
 CodeSyntax.propTypes = {
-  codeString: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default CodeSyntax;

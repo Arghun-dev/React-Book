@@ -6,7 +6,6 @@ import Content from './Content/Content';
 
 const TypescriptAndReact = () => {
   const [selectedContent, setSelectedContent] = useState('');
-  console.log('selectedContent', selectedContent);
   return (
     <Row gutter={[16, 16]}>
       <Row gutter={[16, 16]}>
