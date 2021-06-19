@@ -1,38 +1,26 @@
+import { useState } from 'react';
 import { Row, Col, Card } from 'antd';
 import DisplaySubItem from '../DisplaySubItem';
+import typescriptData from '../../data/typescript';
+import Content from './Content/Content';
 
 const TypescriptAndReact = () => {
+  const [selectedContent, setSelectedContent] = useState('');
+  console.log('selectedContent', selectedContent);
   return (
     <Row gutter={[16, 16]}>
       <Row gutter={[16, 16]}>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>The Fundamentals</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Interacting with components</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Working with reducers</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Color & Context</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Just Enough Typescript</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Higher Order Components</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Advanced Component Patterns</DisplaySubItem>
-        </Col>
-        <Col xs={24} md={12} lg={8}>
-          <DisplaySubItem>Wrapping up</DisplaySubItem>
-        </Col>
+        {typescriptData.typescriptData[0].subMenu.map((item) => (
+          <Col xs={24} md={12} lg={8} key={item.id}>
+            <span onClick={() => setSelectedContent(item.title)}>
+              <DisplaySubItem>{item.title}</DisplaySubItem>
+            </span>
+          </Col>
+        ))}
       </Row>
       <Row style={{ width: '100%' }}>
-        <Card title='The fundamentals' size='small' style={{ width: '100%' }}>
-          dfsf
+        <Card title={selectedContent} size='small' style={{ width: '100%' }}>
+          <Content content={selectedContent} />
         </Card>
       </Row>
     </Row>
