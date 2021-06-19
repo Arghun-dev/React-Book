@@ -1,5 +1,5 @@
 import { Typography } from 'antd';
-import CodeSyntax from '../../../../CodeSyntax';
+import CodeSyntax from '../../../../CodeSyntax/CodeSyntax';
 
 const { Title, Paragraph } = Typography;
 

@@ -1,6 +1,6 @@
 import { Card, Row } from 'antd';
-import Note from '../../../Note';
-import Highlight from '../../../Highlight';
+import Note from '../../../Note/Note';
+import Highlight from '../../../Highlight/Highlight';
 import AlternativeText from './AlternativeText/AlternativeText';
 
 const ImagesInHTML = () => {

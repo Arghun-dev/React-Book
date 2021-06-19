@@ -1,9 +1,9 @@
 import './AlternativeText.scss';
 import { Typography } from 'antd';
-import Highlight from '../../../../Highlight';
+import Highlight from '../../../../Highlight/Highlight';
 // import CodeSyntax from '../../../../CodeSyntax';
-import List from '../../../../List';
-import Note from '../../../../Note';
+import List from '../../../../List/List';
+import Note from '../../../../Note/Note';
 
 const { Title, Paragraph, Text } = Typography;
 
