@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Row, Col, Card } from 'antd';
-import DisplaySubItem from '../DisplaySubItem';
+import DisplaySubItem from '../DisplaySubItem/DisplaySubItem';
 import typescriptData from '../../data/typescript';
 import Content from './Content/Content';
 

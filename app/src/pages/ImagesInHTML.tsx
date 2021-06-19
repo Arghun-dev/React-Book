@@ -1,4 +1,4 @@
-import ImagesInHTML from '../components/HTML/components/ImagesInHTML';
+import ImagesInHTML from '../components/HTML/components/ImagesInHTML/ImagesInHTML';
 
 const ImagesInHTMLPage = () => {
   return <ImagesInHTML />;

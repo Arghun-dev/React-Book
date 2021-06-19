@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { MenuContext } from '../context/MenuContext';
+import { MenuContext } from '@';
 import ImagesInHTMLPage from './ImagesInHTML';
 import Typescript from './Typescript';
 import TypescriptAndReact from '../components/Typescript/TypscriptAndReact';

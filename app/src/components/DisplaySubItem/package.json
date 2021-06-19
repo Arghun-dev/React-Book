@@ -2,5 +2,5 @@
   "name": "display-sub-item",
   "version": "0.0.0",
   "private": "true",
-  "main": "DisplaySubItem.js"
+  "main": "DisplaySubItem.tsx"
 }

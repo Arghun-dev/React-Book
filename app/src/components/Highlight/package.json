@@ -2,5 +2,5 @@
   "name": "highlight",
   "version": "0.0.0",
   "private": "true",
-  "main": "Highlight.js"
+  "main": "Highlight.tsx"
 }

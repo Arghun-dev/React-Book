@@ -2,5 +2,5 @@
   "name": "side-menu",
   "version": "0.0.0",
   "private": "true",
-  "main": "SideMenu.js"
+  "main": "SideMenu.tsx"
 }

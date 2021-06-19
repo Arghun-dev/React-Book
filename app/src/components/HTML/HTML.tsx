@@ -1,6 +1,6 @@
 import { Row, Col, Card } from 'antd';
 import data from '../../data/html';
-import SubList from '../SubList';
+import SubList from '../SubList/SubList';
 import './HTML.scss';
 
 const HTML = () => {

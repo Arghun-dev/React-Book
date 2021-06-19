@@ -2,5 +2,5 @@
   "name": "code-syntax",
   "version": "0.0.0",
   "private": "true",
-  "main": "CodeSyntax.js"
+  "main": "CodeSyntax.tsx"
 }
