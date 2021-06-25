@@ -1,0 +1,6 @@
+{
+  "name": "paragraph",
+  "version": "0.0.0",
+  "private": "true",
+  "main": "Paragraph.tsx"
+}
