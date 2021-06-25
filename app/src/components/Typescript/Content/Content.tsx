@@ -1,6 +1,10 @@
 import Fundamentals from './Fundamentals/Fundamentals';
 
-const Content = ({ content: string }) => {
+type ContentType = {
+  content: string;
+};
+
+const Content = ({ content }: ContentType) => {
   return <>{content === 'The Fundamentals' && <Fundamentals />}</>;
 };
 

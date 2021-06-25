@@ -1,5 +1,5 @@
+import React from 'react';
 import { Row, Col } from 'antd';
-import PropTypes from 'prop-types';
 import cs from 'classnames';
 import './Container.scss';
 
@@ -12,7 +12,13 @@ const responsiveOptions = {
   xxl: 17,
 };
 
-const Container = ({ children, fluid, ...props }) => {
+type ContainerProps = {
+  children: React.ReactNode;
+  fluid: boolean;
+  className: string;
+};
+
+const Container = ({ children, fluid, ...props }: ContainerProps) => {
   const colProps = () => {
     if (fluid) return { span: 24 };
     return responsiveOptions;
@@ -26,12 +32,6 @@ const Container = ({ children, fluid, ...props }) => {
       <Col {...colProps()}>{children}</Col>
     </Row>
   );
-};
-
-Container.propTypes = {
-  children: PropTypes.node.isRequired,
-  fluid: PropTypes.bool,
-  className: PropTypes.string,
 };
 
 export default Container;

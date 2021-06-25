@@ -1,22 +1,26 @@
-import './SubList.scss';
-import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
+import { subListType } from 'types/sideMenuTypes';
+import './SubList.scss';
 
-const SubList = ({ item }) => {
+type subListItemType = {
+  id: number;
+  title: string;
+  content: string;
+};
+
+const SubList = ({ item }: subListType) => {
   const history = useHistory();
   return (
     <ul>
-      {item.list.map((listItem) => (
-        <li key={listItem.id} onClick={() => history.push('/html/images-in-html')}>
-          {listItem.title}
+      {item.list.map((listItem: subListItemType) => (
+        <li key={listItem.id}>
+          <button onClick={() => history.push('/html/images-in-html')}>
+            {listItem.title}
+          </button>
         </li>
       ))}
     </ul>
   );
-};
-
-SubList.propTypes = {
-  item: PropTypes.array.isRequired,
 };
 
 export default SubList;

@@ -1,7 +1,12 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import './DisplaySubItem.scss';
 
-const DisplaySubItem = ({ children }) => {
+type DisplaySubItemProps = {
+  children: React.ReactNode;
+};
+
+const DisplaySubItem = ({ children }: DisplaySubItemProps) => {
   return <div className='displaySubItemRoot'>{children}</div>;
 };
 

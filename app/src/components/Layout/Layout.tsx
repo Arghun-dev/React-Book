@@ -5,7 +5,11 @@ import SideMenu from '../SideMenu/SideMenu';
 
 const { Header, Content, Sider } = Layout;
 
-const AppLayout = ({ children }) => {
+type AppLayoutProps = {
+  children: React.ReactNode;
+};
+
+const AppLayout = ({ children }: AppLayoutProps) => {
   return (
     <Layout style={{ height: '100%', minHeight: '100vh' }}>
       <Header className='header'>

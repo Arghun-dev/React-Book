@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 import './Note.scss';
 
-const Note = ({ children }) => {
+type NoteProps = {
+  children: any;
+};
+
+const Note = ({ children }: NoteProps) => {
   return (
     <div className='noteRoot'>
       <h4>Note:</h4>

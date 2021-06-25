@@ -1,7 +1,12 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import './Highlight.scss';
 
-const Highlight = ({ children }) => {
+type HighlightProps = {
+  children: React.ReactChild;
+};
+
+const Highlight = ({ children }: HighlightProps) => {
   return <span className='highlightRoot'>{children}</span>;
 };
 
